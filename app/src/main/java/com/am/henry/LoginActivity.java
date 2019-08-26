@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.am.henry.activities.MainActivity;
+
 public class LoginActivity extends AppCompatActivity {
 
     Button loginButton;
@@ -21,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
 
         edtLogin = (EditText) findViewById(R.id.edt_email);
         edtSenha = (EditText) findViewById(R.id.edt_password);
-        MainActivity = new Intent(this, com.am.henry.MainActivity.class);
+        MainActivity = new Intent(this, com.am.henry.activities.MainActivity.class);
         loginButton = findViewById(R.id.btn_login);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
